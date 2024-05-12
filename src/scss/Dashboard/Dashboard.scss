@@ -1,3 +1,9 @@
 @import '../mixins';
 @import '../resets';
 @import '../variables';
+
+.container {
+    p {
+        color: $green-secondary;
+    }
+}
