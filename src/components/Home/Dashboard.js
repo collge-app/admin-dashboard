@@ -4,7 +4,7 @@ import "../../dist/css/Dashboard.css"
 function Dashboard()
 {
     return (
-        <div>
+        <div className='container'>
             <p>Dashboard</p>
         </div>
     )
