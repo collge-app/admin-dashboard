@@ -5,3 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
+.container p {
+  color: #45EA69;
+}
