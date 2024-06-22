@@ -8,7 +8,6 @@ function Dashboard()
     return (
         <div className='container'>
 
-            <NavBar />
         </div>
     )
 }
