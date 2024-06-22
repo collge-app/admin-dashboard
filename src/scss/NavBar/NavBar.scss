@@ -1,0 +1,109 @@
+@import '../mixins';
+@import '../resets';
+@import '../variables';
+
+
+.navbar-container {
+
+    width: 80%;
+    height: 86px;
+    background-color: $black-accent;
+    padding: 16px 24px;
+    float: right;
+    @include flex("space-between", "center")
+}
+
+
+.searchBar-container {
+    width: 65%;
+    height: 100%;
+    padding: 0 24px;
+    // background-color: purple;
+    display: grid;
+    align-content: center;
+}
+
+.search-input {
+    height: 42px;
+    padding: 0 16px;
+    border-radius: 32px;
+    width: 55%;
+    border: none;
+    color: $white-tertiary;
+    background-color: $light-black;
+}
+
+.userInfo-container {
+    width: 35%;
+    height: 100%;
+    // background-color: green;
+    @include flex("space-between", "center");
+    padding: 0 24px;
+}
+
+.user-settings {
+    // @include flex("flex-end", "center");
+    // flex-direction: row;
+    display: flex;
+    align-items: "center";
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    padding: 0 16px;
+}
+
+.icon-container {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.setting-icon {
+    height: 24px;
+    width: 24px;
+    align-self: center;
+    margin: 0 8px
+}
+
+
+.user-info {
+    @include flex("center", "space-around");
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+
+.profile-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid $green-secondary;
+}
+
+.user-info {
+    width: 50%;
+    border-left: 1px solid $white-accent;
+    padding: 0 16px;
+}
+
+.user-names-container {
+    margin: 0 8px;
+
+    h4 {
+        font-family: $font-primary;
+        font-weight: $font-regular-weight;
+        color: $white-tertiary;
+    }
+
+    p {
+        font-family: $font-primary;
+        font-weight: $font-regular-weight;
+        color: $white-accent;
+
+    }
+
+}
