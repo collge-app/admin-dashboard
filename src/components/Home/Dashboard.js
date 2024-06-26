@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../dist/css/Dashboard.css"
-import NavBar from "../NavBar/NavBar"
+//import NavBar from "../NavBar/NavBar"
 
 
 function Dashboard()

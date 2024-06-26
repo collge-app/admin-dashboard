@@ -1,0 +1,55 @@
+@import '../mixins'; // Importing mixins for reusable CSS rules
+@import '../resets'; // Importing CSS resets to ensure consistent styling across browsers
+@import '../variables'; // Importing CSS variables for consistent theming
+
+.parent-container-rs {
+    display: flex; /* Using flexbox for layout */
+    justify-content: flex-end; /* Aligning children to the end of the container */
+    float: right; /* Floating the container to the right */
+    padding: 20px; /* Adding padding around the container */
+    min-height: 65vh; /* Setting a minimum height of 65% of the viewport height */
+    width: 30%; /* Setting the width to 30% of the parent container */
+    flex-direction: column; /* Aligning children in a column */
+
+    .container-b {
+        width: 100%; /* Full width of the parent container */
+        height: 93vh; /* Setting the height to 93% of the viewport height */
+        display: flex; /* Using flexbox for layout */
+        flex-direction: column; /* Aligning children in a column */
+        background-color: $light-black; /* Setting background color using a variable */
+        border-radius: 10px; /* Rounding the corners of the container */
+        padding: 20px; /* Adding padding inside the container */
+
+        .title {
+            color: $white-tertiary; /* Setting text color using a variable */
+            font-family: $font-primary; /* Setting font family using a variable */
+            width: 100%; /* Full width of the container */
+            margin-bottom: 20px; /* Adding gap below the title */
+        }
+
+        .anchor-text-parent-container {
+            display: flex; /* Using flexbox for layout */
+            justify-content: center; /* Centering children horizontally */
+            align-items: center; /* Centering children vertically */
+            width: 100%; /* Full width of the container */
+            height: 25%; /* Setting height to 20% of the parent container */
+            flex-direction: column; /* Aligning children in a column */
+
+            .see-more-anchor {
+                background-color: $white-tertiary; /* Setting background color using a variable */
+                border-radius: 5px; /* Rounding the corners of the anchor */
+                height: 45%; /* Setting height to 45% of the parent container */
+                width: 35%; /* Setting width to 30% of the parent container */
+                display: flex; /* Using flexbox for layout */
+                align-items: center; /* Centering text vertically */
+                justify-content: center; /* Centering text horizontally */
+                color: $light-black; /* Setting text color using a variable */
+                font-family: $font-primary; /* Setting font family using a variable */
+                font-size: 12px; /* Setting font size */
+                font-weight: $font-regular-weight; /* Setting font weight using a variable */
+                cursor: pointer; /* Changing cursor to pointer on hover */
+                border: none;
+            }
+        }
+    }
+}

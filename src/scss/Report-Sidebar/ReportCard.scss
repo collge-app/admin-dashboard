@@ -1,0 +1,99 @@
+@import '../mixins'; // Importing mixins for reusable CSS rules
+@import '../resets'; // Importing CSS resets to ensure consistent styling across browsers
+@import '../variables'; // Importing CSS variables for consistent theming
+
+.report-card {
+    width: 100%; // Full width of the parent container
+    height: 35%; // 35% height of the parent container
+    flex-direction: column; // Aligning children in a column
+    display: flex; // Using flexbox for layout
+    justify-content: flex-start; // Aligning children to the start
+    align-items: flex-start; // Aligning children to the start
+    border-radius: 8px; // Rounding the corners
+    background-color: $black-accent; // Setting background color using a variable
+    color: $white-tertiary; // Setting text color using a variable
+    padding: 12px; // Adding padding inside the container
+    margin-bottom: 15px; // Adding space below the card
+
+    .report-card-c1 {
+        width: 100%; // Full width of the parent container
+        height: 50%; // 50% height of the card
+        display: flex; // Using flexbox for layout
+        align-items: center; // Centering children vertically
+        justify-content: flex-start; // Aligning children to the start
+        
+        .report-card-profile {
+            height: 100%; // Full height of the container
+            width: 50%; // 50% width of the container
+            display: flex; // Using flexbox for layout
+            
+            .report-card-profile-text-wrap {
+                display: flex; // Using flexbox for layout
+                align-items: center; // Centering children vertically
+                flex-direction: row; // Aligning children in a row
+                
+                .profile-icon {
+                    height: 38px; // Fixed height for the profile icon
+                    width: 38px; // Fixed width for the profile icon
+                    border-radius: 50%; // Making the icon circular
+                    background-color: white; // Setting background color to white
+                    margin-right: 10px; // Adding space to the right
+                }
+
+                .report-text {
+                    .report-text-name, .report-text-username {
+                        font-family: $font-primary; // Setting font family using a variable
+                        font-size: 12px; // Setting font size
+                    }
+                    .report-text-username {
+                        color: $green-secondary; // Setting text color using a variable
+                        font-weight: $font-regular-weight; // Setting font weight using a variable
+                    }
+                }
+            }
+        }
+
+        .report-card-alert {
+            width: 50%; // 50% width of the container
+            height: 100%; // Full height of the container
+            display: flex; // Using flexbox for layout
+            justify-content: flex-end; // Aligning children to the end
+            align-items: center; // Centering children vertically
+            
+            .report-card-alert-wrap {
+                display: flex; // Using flexbox for layout
+                align-items: flex-start; // Aligning children to the start vertically
+                justify-content: center; // Centering children horizontally
+                flex-direction: row; // Aligning children in a row
+                height: 70%; // 70% height of the container
+                width: 55%; // 55% width of the container
+                border-radius: 5px; // Rounding the corners
+                cursor: pointer; // Changing cursor to pointer on hover
+
+                .report-card-alert-text {
+                    font-family: $font-primary; // Setting font family using a variable
+                    font-weight: $font-regular-weight; // Setting font weight using a variable
+                    font-size: 12px; // Setting font size
+                    color: rgb(247, 37, 37); // Setting text color using RGB value
+                    border: 1px solid rgb(247, 37, 37); // Setting border color using RGB value
+                    padding: 5px 8px; // Adding padding inside the alert text
+                    border-radius: 5px; // Rounding the corners of the alert text
+                }
+            }
+        }
+    }
+
+    .report-card-c2 {
+        width: 100%; // Full width of the container
+        height: 35%; // 35% height of the card
+        display: flex; // Using flexbox for layout
+        align-items: center; // Centering children vertically
+        justify-content: flex-start; // Aligning children to the start
+
+        .report-card-message {
+            font-family: $font-primary; // Setting font family using a variable
+            font-size: 12px; // Setting font size
+            font-weight: $font-regular-weight; // Setting font weight using a variable
+        }
+    }
+}
