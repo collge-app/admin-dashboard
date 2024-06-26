@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.report-card {
+  width: 100%;
+  height: 35%;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 8px;
+  background-color: #171717;
+  color: #FAFAFA;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+.report-card .report-card-c1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.report-card .report-card-c1 .report-card-profile {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+.report-card .report-card-c1 .report-card-profile .report-card-profile-text-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.report-card .report-card-c1 .report-card-profile .report-card-profile-text-wrap .profile-icon {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+}
+.report-card .report-card-c1 .report-card-profile .report-card-profile-text-wrap .report-text .report-text-name, .report-card .report-card-c1 .report-card-profile .report-card-profile-text-wrap .report-text .report-text-username {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+.report-card .report-card-c1 .report-card-profile .report-card-profile-text-wrap .report-text .report-text-username {
+  color: #45EA69;
+  font-weight: 300;
+}
+.report-card .report-card-c1 .report-card-alert {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.report-card .report-card-c1 .report-card-alert .report-card-alert-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  height: 70%;
+  width: 55%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.report-card .report-card-c1 .report-card-alert .report-card-alert-wrap .report-card-alert-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: rgb(247, 37, 37);
+  border: 1px solid rgb(247, 37, 37);
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+.report-card .report-card-c2 {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.report-card .report-card-c2 .report-card-message {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}/*# sourceMappingURL=ReportCard.css.map */

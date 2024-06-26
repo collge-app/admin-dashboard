@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container-a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 7vh;
+  width: 100%;
+  border: 2px solid blue;
+  margin-bottom: 20px;
+}
+.container-a .automation {
+  border-radius: 5px;
+  border: none;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  background-color: #1DB954; /* Bright green color */
+  color: #2C2C2C;
+  cursor: pointer;
+}
+.container-a .automation:hover {
+  color: #FAFAFA;
+  background-color: #1ed760; /* Slightly lighter green on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+.container-a .automation:focus {
+  outline: none; /* Remove default focus outline */
+}/*# sourceMappingURL=AutomationButton.css.map */
